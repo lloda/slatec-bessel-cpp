@@ -7,7 +7,7 @@
 #include <random>
 #include <cmath>
 #include <chrono>
-#include "slatec/f2c/slatec.hpp"
+#include "f2c/slatec.hpp"
 
 using std::cout, std::endl, std::flush;
 
