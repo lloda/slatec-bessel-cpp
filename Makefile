@@ -12,7 +12,7 @@ OBJS_F2C := $(SRCS_F2C:.cpp=.o)
 # https://stackoverflow.com/a/25817631
 print-% : ; @echo $* = $($*)
 
-CXXFLAGS = -std=c++1z -Wno-parentheses -O2 -fopenmp -I .
+CXXFLAGS = -std=c++20 -Wall -Werror -Wno-parentheses -O2 -fopenmp -I .
 FORTRANFLAGS = -O2
 LDFLAGS_FORTRAN = -lgfortran -fopenmp
 LDFLAGS_F2C = -fopenmp

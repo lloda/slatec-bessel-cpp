@@ -7,10 +7,10 @@ I include both the original Fortran source and the translation, and a test that 
 
 Bear in mind that:
 
-* The translation requires -std=c++1z on a newish compiler. There's no reason the translation couldn't be, say, C99, or an older version of C++. -std=c++1z is just what I use.
+* The translation uses -std=c++20 for my own convenience, but it should be trivial to make it work with an earlier version.
 * All the error reporting routines are broken, because I'm too lazy to plunder the right pieces from f2c or to fix the f2c'd I/O. This means that if you call the routines with the wrong arguments, you'll probably get a NaN out, or your program will simply exit. Until this is fixed, it might be useful to link against the Fortran version of the library for development.
 * The SLATEC functions `d1mach i1mach dlamch` are *not* exported. The are available (with value arguments) in the header `slatec/f2c/mach.hpp`.
 
 To run the tests, just run `make`.
 
-The whole thing is in the public domain, please feel free to fork or whatever.
+This code is in the public domain.

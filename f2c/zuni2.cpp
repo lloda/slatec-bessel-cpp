@@ -42,7 +42,7 @@ int zuni2_(double *zr, double *zi, double const *fnu,
     double dair, aphi, argi, cscl, phii, crsc, argr;
     integer idum;
     double phir, csrr[3], cssr[3], rast;
-    integer iflag;
+    integer iflag = 0;
     double ascle, asumi, bsumi;
     double asumr, bsumr;
     double zeta1i, zeta2i, zeta1r, zeta2r;

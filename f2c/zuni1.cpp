@@ -34,7 +34,7 @@ int zuni1_(double *zr, double *zi, double const *fnu,
     double phir;
     integer init;
     double csrr[3], cssr[3], rast, sumi, sumr;
-    integer iflag;
+    integer iflag = 0;
     double ascle, cwrki[16];
     double cwrkr[16];
     double zeta1i, zeta2i, zeta1r, zeta2r;
