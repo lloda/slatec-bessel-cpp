@@ -9,7 +9,7 @@
 constexpr int FLT_DIGITS = 24;
 constexpr int DBL_DIGITS = 53;
 
-constexpr inline
+constexpr
 float
 slamch_(char const ch)
 {
@@ -47,7 +47,7 @@ slamch_(char const ch)
     return zero;
 }
 
-constexpr inline
+constexpr
 double
 dlamch_(char const ch)
 {
@@ -85,7 +85,7 @@ dlamch_(char const ch)
     return zero;
 }
 
-constexpr inline
+constexpr
 double
 d1mach_(int const i__)
 {
@@ -576,7 +576,7 @@ d1mach_(int const i__)
     return dmach[i__ - 1];
 }
 
-constexpr inline
+constexpr
 int
 i1mach_(int const i__)
 {
