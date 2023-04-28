@@ -115,10 +115,10 @@ int zbknu_(double *zr, double *zi, double const *fnu,
     rzi = (sti + sti) * rcaz;
     inu = (integer) (*fnu + .5);
     dnu = *fnu - inu;
+    dnu2 = 0.;
     if (abs(dnu) == .5) {
 	goto L110;
     }
-    dnu2 = 0.;
     if (abs(dnu) > *tol) {
 	dnu2 = dnu * dnu;
     }

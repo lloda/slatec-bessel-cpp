@@ -153,10 +153,10 @@ int dbsknu_(double const *x, double const *fnu, integer const *kode,
     rx = 2. / *x;
     inu = (integer) (*fnu + .5);
     dnu = *fnu - inu;
+    dnu2 = 0.;
     if (abs(dnu) == .5) {
 	goto L120;
     }
-    dnu2 = 0.;
     if (abs(dnu) < tol) {
 	goto L10;
     }
