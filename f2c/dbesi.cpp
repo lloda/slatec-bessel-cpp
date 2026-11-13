@@ -36,7 +36,7 @@ int dbesi_(double const *x, double const *alpha, integer const *kode, integer co
     double dx;
     integer kt, ns = 0;
     double tm, sx, xo2, ain, akm, arg, dfn, fnf, fni, gln, ans, dtm, tfn,
-	    fnu, tol, etx, trx, fnp1, xo2l, sxo2, earg;
+	    fnu, tol, etx, trx, fnp1, xo2l = 0, sxo2, earg;
     integer ialp;
     double elim, atol, temp[3], flgik, tolln;
 
